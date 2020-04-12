@@ -80,7 +80,7 @@ A platform that allows users to keep track of their to-do activities and share t
     * Personal Activity Tracker/Log (after the initial creation of starting the activity, the user can keep updating their progress in their activity list under their profile)
 
 ## Wireframes
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/Tracktivity/Tracktivity/blob/master/img.jpg" width=600>
 
 
 ## Schema 
