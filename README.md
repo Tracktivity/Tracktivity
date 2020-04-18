@@ -27,12 +27,12 @@ A platform that allows users to keep track of their to-do activities and share t
 
 **Required Must-have Stories**
 
-* sign up
-* sign in/sign out
-* to post
-* "like" feature
-* comment on a post
-* add friend
+* [X] sign up 
+* [X] sign in/sign out
+* [ ] to post
+* [ ] "like" feature
+* [ ] comment on a post
+* [ ] add friend
 
 
 **Optional Nice-to-have Stories**
@@ -333,3 +333,7 @@ Model: Post
                 }
             }
         ```
+### App Walkthrough GIF
+
+<img src="http://g.recordit.co/EroWP7jVIF.gif" width=250><br>
+    
