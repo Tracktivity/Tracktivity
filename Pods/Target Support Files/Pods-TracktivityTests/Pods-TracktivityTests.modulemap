@@ -1,0 +1,6 @@
+framework module Pods_TracktivityTests {
+  umbrella header "Pods-TracktivityTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
