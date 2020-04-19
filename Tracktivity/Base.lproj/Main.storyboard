@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-Hb-EoX">
-                                <rect key="frame" x="47" y="524" width="52" height="30"/>
+                                <rect key="frame" x="47" y="524" width="57" height="30"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="signup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSe-T6-end"/>
@@ -61,11 +61,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hk-lA-Cwu">
-                                <rect key="frame" x="282" y="524" width="47" height="30"/>
-                                <state key="normal" title="Sign in"/>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hk-lA-Cwu">
+                                <rect key="frame" x="287" y="524" width="42" height="30"/>
+                                <state key="normal" title="Log in"/>
                                 <connections>
-                                    <action selector="signin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMF-Rx-bMb"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMF-Rx-bMb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="-58.399999999999999" y="107.49625187406298"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Feed-->
         <scene sceneID="KFm-BT-eDQ">
             <objects>
                 <tableViewController id="LCE-ip-yUr" sceneMemberID="viewController">
@@ -133,7 +133,9 @@
                             <outlet property="delegate" destination="LCE-ip-yUr" id="r3n-ML-WI0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="3cf-8b-TxG"/>
+                    <navigationItem key="navigationItem" title="Feed" id="3cf-8b-TxG">
+                        <barButtonItem key="rightBarButtonItem" id="E6O-te-9Yf"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JzP-46-QYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,7 +144,7 @@
         <!--Navigation Controller-->
         <scene sceneID="pwd-Sr-bGE">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="Bhy-Na-eLg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" modalPresentationStyle="fullScreen" id="Bhy-Na-eLg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Drd-x5-HCx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

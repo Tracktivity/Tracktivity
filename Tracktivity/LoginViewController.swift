@@ -19,22 +19,22 @@ class LoginViewController: UIViewController {
     
     @IBAction func signup(_ sender: Any) {
         let user = PFUser()
-               user.username = username.text
-               user.password = password.text
-               
-               user.signUpInBackground { (success, error) in
-                   if success {
-                       self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                   } else {
-                       print("Error: \(error?.localizedDescription)")
-                   }
-               }
+        user.username = username.text
+        user.password = password.text
+
+        user.signUpInBackground { (success, error) in
+           if success {
+               self.performSegue(withIdentifier: "loginSegue", sender: nil)
+           } else {
+               print("Error: \(error?.localizedDescription)")
+           }
+        }
     }
     
-    @IBAction func signin(_ sender: Any) {
-      let usernameval = username.text!
+    @IBAction func login(_ sender: Any) {
+        let usernameval = username.text!
         let passwordval = password.text!
-        
+
         PFUser.logInWithUsername(inBackground: usernameval, password: passwordval) { (user, error) in
             if user != nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
