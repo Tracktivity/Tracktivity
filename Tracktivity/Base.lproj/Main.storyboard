@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tracktivity" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Tracktivity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,59 +103,52 @@
                     <connections>
                         <outlet property="password" destination="9we-xe-ftF" id="5oz-Pw-5G2"/>
                         <outlet property="username" destination="kk4-42-2kk" id="seD-1K-Lvj"/>
-                        <segue destination="Bhy-Na-eLg" kind="presentation" identifier="loginSegue" id="kbx-Kb-dXa"/>
+                        <segue destination="Ctt-Ec-PBx" kind="presentation" identifier="loginSegue" id="AsW-dn-h5T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-58.399999999999999" y="107.49625187406298"/>
         </scene>
-        <!--Feed-->
-        <scene sceneID="KFm-BT-eDQ">
+        <!--Feed View Controller-->
+        <scene sceneID="1et-uz-nAr">
             <objects>
-                <tableViewController id="LCE-ip-yUr" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vkm-9H-Kpf">
+                <viewController id="YQ7-2U-3PP" customClass="FeedViewController" customModule="Tracktivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAf-8X-nrr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iuu-pk-lX6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iuu-pk-lX6" id="3Vc-UD-vcM">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="LCE-ip-yUr" id="jGL-B3-D82"/>
-                            <outlet property="delegate" destination="LCE-ip-yUr" id="r3n-ML-WI0"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Feed" id="3cf-8b-TxG">
-                        <barButtonItem key="rightBarButtonItem" id="E6O-te-9Yf"/>
+                        <viewLayoutGuide key="safeArea" id="08v-J0-rOZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fYF-T5-8lD">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="rWu-lJ-mWU">
+                            <connections>
+                                <action selector="logout:" destination="YQ7-2U-3PP" id="8sW-ht-nig"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JzP-46-QYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLM-ri-bN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="107"/>
+            <point key="canvasLocation" x="1759" y="107"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="pwd-Sr-bGE">
+        <scene sceneID="pbh-IT-6aR">
             <objects>
-                <navigationController storyboardIdentifier="FeedNavigationController" modalPresentationStyle="fullScreen" id="Bhy-Na-eLg" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Drd-x5-HCx">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Ctt-Ec-PBx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pW0-Yq-kEQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LCE-ip-yUr" kind="relationship" relationship="rootViewController" id="QHe-02-tqK"/>
+                        <segue destination="YQ7-2U-3PP" kind="relationship" relationship="rootViewController" id="zzL-EL-rBY"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="80Q-hG-Lkt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4q-SY-in0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778" y="107"/>
+            <point key="canvasLocation" x="830" y="107"/>
         </scene>
     </scenes>
     <resources>
