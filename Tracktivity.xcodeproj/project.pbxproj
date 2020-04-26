@@ -17,6 +17,8 @@
 		AA91772C244B4D0A0020A4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA91772A244B4D0A0020A4B9 /* LaunchScreen.storyboard */; };
 		AA917737244B4D0A0020A4B9 /* TracktivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA917736244B4D0A0020A4B9 /* TracktivityTests.swift */; };
 		AA917742244B4D0A0020A4B9 /* TracktivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA917741244B4D0A0020A4B9 /* TracktivityUITests.swift */; };
+		C7C898602453C5A70082BBF5 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C8985F2453C5A70082BBF5 /* ActivityViewController.swift */; };
+		C7C89864245492520082BBF5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C89863245492520082BBF5 /* PostCell.swift */; };
 		C962B65B0328947020322F50 /* Pods_TracktivityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7244A4BC948BA54CBE7A46 /* Pods_TracktivityTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		AA91773D244B4D0A0020A4B9 /* TracktivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracktivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA917741244B4D0A0020A4B9 /* TracktivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracktivityUITests.swift; sourceTree = "<group>"; };
 		AA917743244B4D0A0020A4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C8985F2453C5A70082BBF5 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		C7C89863245492520082BBF5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D1B1D01178AA0804EDEA7F25 /* Pods-Tracktivity-TracktivityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracktivity-TracktivityUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tracktivity-TracktivityUITests/Pods-Tracktivity-TracktivityUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD7244A4BC948BA54CBE7A46 /* Pods_TracktivityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TracktivityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC5EFA9EFA400AA135CD72F /* Pods-TracktivityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TracktivityTests.release.xcconfig"; path = "Target Support Files/Pods-TracktivityTests/Pods-TracktivityTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 			children = (
 				AA917721244B4D080020A4B9 /* AppDelegate.swift */,
 				AA917725244B4D080020A4B9 /* Main.storyboard */,
+				C7C89863245492520082BBF5 /* PostCell.swift */,
+				C7C8985F2453C5A70082BBF5 /* ActivityViewController.swift */,
 				AA917728244B4D0A0020A4B9 /* Assets.xcassets */,
 				AA91772A244B4D0A0020A4B9 /* LaunchScreen.storyboard */,
 				AA91772D244B4D0A0020A4B9 /* Info.plist */,
@@ -410,6 +416,8 @@
 				20DF17D4244B63100031B6B8 /* LoginViewController.swift in Sources */,
 				20DF1812244CB8980031B6B8 /* FeedViewController.swift in Sources */,
 				AA917722244B4D080020A4B9 /* AppDelegate.swift in Sources */,
+				C7C898602453C5A70082BBF5 /* ActivityViewController.swift in Sources */,
+				C7C89864245492520082BBF5 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
