@@ -29,11 +29,11 @@ A platform that allows users to keep track of their to-do activities and share t
 
 * [X] sign up 
 * [X] sign in/sign out
-* [ ] to post
+* [X] to post
+* [X] profile page
 * [ ] "like" feature
 * [ ] comment on a post
 * [ ] add friend
-
 
 **Optional Nice-to-have Stories**
 * users can se their profile page with their photos
