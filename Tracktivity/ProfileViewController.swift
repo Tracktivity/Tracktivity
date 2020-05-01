@@ -1,14 +1,14 @@
 //
-//  ActivityViewController.swift
+//  ProfileViewController.swift
 //  Tracktivity
 //
-//  Created by Ashraf Khan on 4/24/20.
+//  Created by Yiheng Cen Feng on 4/27/20.
 //  Copyright © 2020 codepath. All rights reserved.
 //
 
 import UIKit
 
-class ActivityViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
