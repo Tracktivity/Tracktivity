@@ -29,11 +29,11 @@ A platform that allows users to keep track of their to-do activities and share t
 
 * [X] sign up 
 * [X] sign in/sign out
-* [ ] to post
+* [X] to post
+* [X] profile page
 * [ ] "like" feature
 * [ ] comment on a post
 * [ ] add friend
-
 
 **Optional Nice-to-have Stories**
 * users can se their profile page with their photos
@@ -336,4 +336,5 @@ Model: Post
 ### App Walkthrough GIF
 
 <img src="http://g.recordit.co/EroWP7jVIF.gif" width=250><br>
+<img src="http://g.recordit.co/G175PbXm1y.gif" width=250><br>
     
