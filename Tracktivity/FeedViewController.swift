@@ -21,6 +21,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedPost: PFObject!
     var postButtom = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,11 +70,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         // Create the comment
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm"
+        
         if(postButtom == true) {
             let post = PFObject(className: "Posts")
             
             post["caption"] = text
             post["author"] = PFUser.current()
+    
+            post["dateTime"] = formatter.string(from: Date())
             
             post.saveInBackground { (success, error) in
                 if success {
@@ -90,6 +96,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             comment["text"] = text
             comment["post"] = selectedPost
             comment["author"] = PFUser.current()!
+            
+            comment["dateTime"] = formatter.string(from: Date())
 
             selectedPost.add(comment, forKey: "comments")
 
@@ -154,6 +162,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.usernameLabel.text = user.username
             
             cell.captionLabel.text = post["caption"] as! String
+            cell.datetimelabel.text = post["dateTime"] as! String
             
             return cell
         } else if indexPath.row <= comments.count {
@@ -162,8 +171,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let comment = comments[indexPath.row - 1]
             cell.commentLabel.text = comment["text"] as? String
             
-            let user = comment["author"] as! PFUser
-            cell.nameLabel.text = user.username
+            cell.datetimeLabel.text = comment["dateTime"] as! String
             
             return cell
         } else {
@@ -191,7 +199,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
            // Find the selected post
            let cell = sender as! UITableViewCell
            let indexPath = tableView.indexPath(for: cell)!
-           let post = posts[indexPath.row]
+           let post = posts[indexPath.section]
            
            // Pass the selected post to the datails view controller
            let detailsViewController = segue.destination as! PostDetailsViewController

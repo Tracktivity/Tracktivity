@@ -10,6 +10,7 @@ import UIKit
 
 class PostCell: UITableViewCell {
 
+    @IBOutlet weak var datetimelabel: UILabel!
     
     @IBOutlet var photoView: UIImageView!
     
