@@ -32,7 +32,7 @@ A platform that allows users to keep track of their to-do activities and share t
 * [X] to post
 * [X] profile page
 * [ ] "like" feature
-* [ ] comment on a post
+* [X] comment on a post
 * [ ] add friend
 
 **Optional Nice-to-have Stories**
@@ -337,4 +337,6 @@ Model: Post
 
 <img src="http://g.recordit.co/EroWP7jVIF.gif" width=250><br>
 <img src="http://g.recordit.co/G175PbXm1y.gif" width=250><br>
+<img src="http://g.recordit.co/3K66AFCHmi.gif" width=250><br>
+
     
