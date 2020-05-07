@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import Parse
 
 class PostDetailsViewController: UIViewController {
+    
+    var post: PFObject?
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var captionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let user = post?["author"] as! PFUser
+        usernameLabel.text = user.username
+
+        captionLabel.text = post!["caption"] as? String
     }
     
 
