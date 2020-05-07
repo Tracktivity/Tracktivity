@@ -8,6 +8,7 @@ target 'Tracktivity' do
   # Pods for Tracktivity
   pod "Parse"
   pod "AlamofireImage"
+  pod "MessageInputBar"
 
   target 'TracktivityTests' do
     inherit! :search_paths
