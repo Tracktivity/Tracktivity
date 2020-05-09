@@ -217,7 +217,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
            detailsViewController.post = post
            
            tableView.deselectRow(at: indexPath, animated: true)
-       } 
+       }else{
+           let profileViewController = segue.destination as! ProfileViewController
+           profileViewController.postArray = posts
+       
+           
+       }
     }
     
    

@@ -10,9 +10,11 @@ import UIKit
 import Parse
 
 class ProfileViewController: UIViewController {
+    var postArray: [PFObject]?
     
     @IBOutlet weak var usernameLabel: UILabel!
     
+    @IBOutlet var captionLabel: UILabel!
     @IBOutlet var profileview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,10 @@ class ProfileViewController: UIViewController {
         let user = PFUser.current()
         usernameLabel.text = user!.username
 
+        let post = postArray![0]
+        captionLabel.text = post["caption"] as? String
+        
+        
         profileview.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.green, colorThree: Colors.blue, colorFour: Colors.green)
        
     }
