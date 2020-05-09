@@ -12,7 +12,12 @@ import Parse
 class ProfileViewController: UIViewController {
     var postArray: [PFObject]?
     
+    
+
+    @IBOutlet var dataTimeLabel: UILabel!
+    
     @IBOutlet weak var usernameLabel: UILabel!
+    
     
     @IBOutlet var captionLabel: UILabel!
     @IBOutlet var profileview: UIView!
@@ -25,8 +30,10 @@ class ProfileViewController: UIViewController {
         let post = postArray![0]
         captionLabel.text = post["caption"] as? String
         
+        dataTimeLabel.text = post["dateTime"] as? String
         
-        profileview.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.green, colorThree: Colors.blue, colorFour: Colors.green)
+        
+        //profileview.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.green, colorThree: Colors.blue, colorFour: Colors.green)
        
     }
     

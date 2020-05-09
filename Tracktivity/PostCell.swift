@@ -14,6 +14,9 @@ class PostCell: UITableViewCell {
     
     @IBOutlet weak var resolvebutton: UIButton!
     
+    
+    @IBOutlet var lbl: UILabel!
+    
     var resolved:Bool = false
     
     func setResolved(_ isResolved:Bool) {
@@ -35,6 +38,18 @@ class PostCell: UITableViewCell {
     }
     
 
+    @IBAction func slider(_ sender: UISlider) {
+        if(sender.value > 0 && sender.value <= 25){
+            sender.value = 25
+        }else if(sender.value > 25 && sender.value <= 50){
+            sender.value = 50
+        }else if(sender.value > 50 && sender.value <= 75){
+            sender.value = 75
+        }else{
+            sender.value = 100
+        }
+        lbl.text = String(Int(sender.value))
+    }
     
     @IBOutlet var photoView: UIImageView!
     
