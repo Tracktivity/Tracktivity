@@ -13,6 +13,8 @@
 		20DF1812244CB8980031B6B8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DF1811244CB8980031B6B8 /* FeedViewController.swift */; };
 		578216C4FDF4A7330E5013AA /* Pods_Tracktivity_TracktivityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3008E37FC6C0C50A76F64F1B /* Pods_Tracktivity_TracktivityUITests.framework */; };
 		8D71FE99BCDE59ABF9DE893D /* Pods_Tracktivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7043355A404C7E8C410917B7 /* Pods_Tracktivity.framework */; };
+		AA2184532466346E001C854B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2184522466346E001C854B /* UIView+Extension.swift */; };
+		AA2184552466355D001C854B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2184542466355D001C854B /* Constants.swift */; };
 		AA917722244B4D080020A4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA917721244B4D080020A4B9 /* AppDelegate.swift */; };
 		AA917727244B4D080020A4B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA917725244B4D080020A4B9 /* Main.storyboard */; };
 		AA917729244B4D0A0020A4B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA917728244B4D0A0020A4B9 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		73A80668D36D0F308B282077 /* Pods-Tracktivity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracktivity.debug.xcconfig"; path = "Target Support Files/Pods-Tracktivity/Pods-Tracktivity.debug.xcconfig"; sourceTree = "<group>"; };
 		9C20E5A4AE03E8AF1BB3873A /* Pods-Tracktivity-TracktivityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracktivity-TracktivityUITests.release.xcconfig"; path = "Target Support Files/Pods-Tracktivity-TracktivityUITests/Pods-Tracktivity-TracktivityUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A5B3D828D8D253785CC16A73 /* Pods-Tracktivity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tracktivity.release.xcconfig"; path = "Target Support Files/Pods-Tracktivity/Pods-Tracktivity.release.xcconfig"; sourceTree = "<group>"; };
+		AA2184522466346E001C854B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AA2184542466355D001C854B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AA91771E244B4D080020A4B9 /* Tracktivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracktivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA917721244B4D080020A4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA917726244B4D080020A4B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				202C46BC24575C7D00EB7764 /* ProfileViewController.swift */,
 				202C46BE24575D5600EB7764 /* PostDetailsViewController.swift */,
 				AAF3E02A245D429300FEDB84 /* CommentCell.swift */,
+				AA2184522466346E001C854B /* UIView+Extension.swift */,
+				AA2184542466355D001C854B /* Constants.swift */,
 			);
 			path = Tracktivity;
 			sourceTree = "<group>";
@@ -421,11 +427,13 @@
 			files = (
 				20DF17D4244B63100031B6B8 /* LoginViewController.swift in Sources */,
 				20DF1812244CB8980031B6B8 /* FeedViewController.swift in Sources */,
+				AA2184532466346E001C854B /* UIView+Extension.swift in Sources */,
 				202C46BD24575C7D00EB7764 /* ProfileViewController.swift in Sources */,
 				202C46BF24575D5600EB7764 /* PostDetailsViewController.swift in Sources */,
 				AA917722244B4D080020A4B9 /* AppDelegate.swift in Sources */,
 				C7C89864245492520082BBF5 /* PostCell.swift in Sources */,
 				AAF3E02B245D429300FEDB84 /* CommentCell.swift in Sources */,
+				AA2184552466355D001C854B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

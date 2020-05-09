@@ -13,11 +13,14 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
     
+    @IBOutlet var profileview: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let user = PFUser.current()
         usernameLabel.text = user!.username
+
+        profileview.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.green, colorThree: Colors.blue, colorFour: Colors.green)
        
     }
     

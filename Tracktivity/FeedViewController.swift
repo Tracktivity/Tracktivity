@@ -11,8 +11,12 @@ import Parse
 //import AlamofireImage
 import MessageInputBar
 
+
+
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
   
+
+    
     @IBOutlet var tableView: UITableView!
     
     let commentBar = MessageInputBar()
@@ -24,6 +28,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
+    
+    //override func viewDidLoad() {
+        //super.viewDidLoad()
         
         commentBar.inputTextView.placeholder = "Type here..."
         commentBar.sendButton.title = "Post"
@@ -78,8 +87,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             post["caption"] = text
             post["author"] = PFUser.current()
-    
+            
             post["dateTime"] = formatter.string(from: Date())
+            
+            post["resolved"] = false;
             
             post.saveInBackground { (success, error) in
                 if success {
@@ -190,7 +201,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             commentBar.inputTextView.becomeFirstResponder()
             
             selectedPost = post
-        }
+        } 
     }
     
     //MARK: - Navigation
@@ -208,6 +219,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
            tableView.deselectRow(at: indexPath, animated: true)
        } 
     }
-
-
+    
+   
+    
 }

@@ -9,8 +9,32 @@
 import UIKit
 
 class PostCell: UITableViewCell {
-
+    
     @IBOutlet weak var datetimelabel: UILabel!
+    
+    @IBOutlet weak var resolvebutton: UIButton!
+    
+    var resolved:Bool = false
+    
+    func setResolved(_ isResolved:Bool) {
+        resolved = isResolved
+        if (resolved) {
+            resolvebutton.setImage(UIImage(named:"resolved"), for: UIControl.State.normal)
+        }
+        else {
+            resolvebutton.setImage(UIImage(named:"unresolved"), for: UIControl.State.normal)
+        }
+    }
+    
+    @IBAction func resolvepost(_ sender: Any) {
+        if resolvebutton.backgroundColor == UIColor.black {
+            resolvebutton.setImage(UIImage(named:"resolved"), for: UIControl.State.normal)
+        } else {
+            resolvebutton.setImage(UIImage(named:"unresolved"), for: UIControl.State.normal)
+        }
+    }
+    
+
     
     @IBOutlet var photoView: UIImageView!
     

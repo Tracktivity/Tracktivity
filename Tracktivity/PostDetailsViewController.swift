@@ -13,6 +13,9 @@ class PostDetailsViewController: UIViewController {
     
     var post: PFObject?
     
+    
+    @IBOutlet var backgroundview: UIView!
+    
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     
@@ -23,6 +26,8 @@ class PostDetailsViewController: UIViewController {
         usernameLabel.text = user.username
 
         captionLabel.text = post!["caption"] as? String
+        
+        backgroundview.setGradientBackground(colorOne: Colors.white, colorTwo: Colors.green, colorThree: Colors.blue, colorFour: Colors.green)
     }
     
 
